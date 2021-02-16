@@ -44,8 +44,8 @@ console.log(netProfit.toFixed(2));
 
 //Advanced
 
-console.log(`Максимальная цена: ${Math.ceil(mouse)}, ${Math.ceil(pcDisplay)}, ${Math.ceil(wifiRouter)};
-Минимальная цена: ${Math.floor(mouse)}, ${Math.floor(pcDisplay)}, ${Math.floor(wifiRouter)};
+console.log(`Максимальная цена: ${Math.max(mouse, pcDisplay, wifiRouter)};
+Минимальная цена: ${Math.min(mouse, pcDisplay, wifiRouter)};
 Стоимость всех товаров: ${sum};
 Стоимость всех товаров по минимальной цене: ${roundedSum};
 Стоимость всех товаров округленная до сотен: ${roundedSumHundred(roundedSum)};
