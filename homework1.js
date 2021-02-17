@@ -4,9 +4,9 @@ const mouse = 15.678;
 const pcDisplay = 123.965;
 const wifiRouter = 90.2345;
 
-console.log(Math.ceil(mouse), Math.ceil(pcDisplay), Math.ceil(wifiRouter), 'округлил до большего');
+console.log(Math.max(mouse, pcDisplay, wifiRouter));
 
-console.log(Math.floor(mouse), Math.floor(pcDisplay), Math.floor(wifiRouter), 'округлил до меньшего');
+console.log(Math.min(mouse, pcDisplay, wifiRouter));
 
 const sum = mouse + pcDisplay + wifiRouter;
 console.log(sum);
