@@ -20,15 +20,7 @@ const roundedSumHundred = function (roundedSum) {
 console.log(roundedSumHundred(roundedSum));
 
 console.log(Boolean.apply(roundedSum)); //I`m not sure if it`s a right answer
-const ifCount = function (roundedSum) { //As for me it`s right answer
-    if (roundedSum % 2) {
-        console.log(`Сумма являеться парным числом`);
-    } else {
-        console.log(`Сумма являеться непарным числом`);
-    }
-};
-
-
+const ifWhichDigit = roundedSum % 2 ? 'Сумма являеться парным числом' : 'Сумма являеться непарным числом';
 
 const rest = 500 - sum;
 console.log(rest);
@@ -49,8 +41,7 @@ console.log(`Максимальная цена: ${maxValue};
 Стоимость всех товаров: ${sum};
 Стоимость всех товаров по минимальной цене: ${roundedSum};
 Стоимость всех товаров округленная до сотен: ${roundedSumHundred(roundedSum)};
-Являеться ли сума всех товаров парным числом - ${ifCount(roundedSum % 2) ?
-        'Сумма являеться парным числом' : 'Сумма являеться непарным числом'};
+Являеться ли сума всех товаров парным числом - ${ifWhichDigit};
 Сдача ${rest};
 Среднее значение цен: ${Number(avgPrices.toFixed(2))};
 Cчет после скидки: ${Number(bill.toFixed(2))};
