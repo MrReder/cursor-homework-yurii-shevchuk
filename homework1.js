@@ -4,9 +4,9 @@ const mouse = 15.678;
 const pcDisplay = 123.965;
 const wifiRouter = 90.2345;
 
-console.log(Math.max(mouse, pcDisplay, wifiRouter));
+const maxValue = Math.max(mouse, pcDisplay, wifiRouter);
 
-console.log(Math.min(mouse, pcDisplay, wifiRouter));
+const minValue = Math.min(mouse, pcDisplay, wifiRouter);
 
 const sum = mouse + pcDisplay + wifiRouter;
 console.log(sum);
@@ -44,15 +44,15 @@ console.log(netProfit.toFixed(2));
 
 //Advanced
 
-console.log(`Максимальная цена: ${Math.max(mouse, pcDisplay, wifiRouter)};
-Минимальная цена: ${Math.min(mouse, pcDisplay, wifiRouter)};
+console.log(`Максимальная цена: ${maxValue};
+Минимальная цена: ${minValue};
 Стоимость всех товаров: ${sum};
 Стоимость всех товаров по минимальной цене: ${roundedSum};
 Стоимость всех товаров округленная до сотен: ${roundedSumHundred(roundedSum)};
 Являеться ли сума всех товаров парным числом - ${ifCount(roundedSum % 2) ?
         'Сумма являеться парным числом' : 'Сумма являеться непарным числом'};
 Сдача ${rest};
-Среднее значение цен: ${avgPrices.toFixed(2)};
-Cчет после скидки: ${bill.toFixed(2)};
-Чистая прибыль предприятия: ${netProfit.toFixed(2)}.
+Среднее значение цен: ${Number(avgPrices.toFixed(2))};
+Cчет после скидки: ${Number(bill.toFixed(2))};
+Чистая прибыль предприятия: ${Number(netProfit.toFixed(2))}.
 `)
