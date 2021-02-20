@@ -15,7 +15,7 @@ const roundedSumPrices = Math.floor(mousePrice) + Math.floor(pcDisplayPrice) + M
 console.log(roundedSumPrices);
 
 const roundedSumHundred = function (roundedSumPrices) {
-    return Math.random(roundedSumPrices / 100) * 100;
+    return Math.ceil(roundedSumPrices / 100) * 100;
 };
 console.log(roundedSumHundred(roundedSumPrices));
 
@@ -28,11 +28,11 @@ console.log(rest);
 
 const avgPrices = sumPrices / 3;
 console.log(avgPrices.toFixed(2));
-
-const bill = sumPrices + (sumPrices * Math.random());
+const discount = sumPrices * Math.random();
+const bill = sumPrices - discount;
 console.log(bill.toFixed(2));
 
-const netProfit = (sumPrices / 2) - Math.random() * sumPrices;
+const netProfit = (sumPrices / 2) - discount;
 console.log(netProfit.toFixed(2));
 
 //Advanced
